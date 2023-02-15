@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+   background-color: rgb(102, 102, 102);
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.logo{
+    background-color: azure;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    
+}
+.logo img{
+    padding: 20px;
+    margin: 20px;
+    background-color: azure;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+nav a{
+    background-color: rgb(163, 161, 161);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    
+}

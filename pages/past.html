@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="shortcut icon" href="../assets/FaviconAmazingEvents.png" type="image/x-icon">
+        <title>Past Events | Amazing Events</title>
+    </head>
+    
+    <body>
+        <header class="d-flex p-2 sticky-top justify-content-between flex-wrap" style="background: linear-gradient(180deg, rgb(13, 41, 151) 0%, 70%, rgb(28, 79, 221) 100%);color: #fff;box-shadow:0px 10px 70px 0px rgb(61, 61, 61);">
+            
+            <div class="p-3 d-flex">
+                <a class="navbar-brand" href="#">
+                  <img src="../assets/LogoAmazing Events.png" alt="Logo Amazing Events" width="250">
+                </a>
+            </div>
+
+            <nav class=" d-flex align-items-center" style="color: #fff;">
+
+                <ul class="nav p-3">
+                    <li class="nav-item p-2">
+                      <a class="nav-link text-white rounded" aria-current="page" href="../index.html" style="background: linear-gradient(60deg, rgb(67, 66, 66) 0%,rgb(30, 30, 30) 40%,rgb(0, 0, 0) 100%);">Home</a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link text-white rounded" href="./upcoming.html" style="background: linear-gradient(60deg, rgb(67, 66, 66) 0%,rgb(30, 30, 30) 40%,rgb(0, 0, 0) 100%);">Upcoming Events</a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link text-white rounded" href="./past.html" style="background: linear-gradient(60deg, rgb(67, 66, 66) 0%,rgb(30, 30, 30) 40%,rgb(0, 0, 0) 100%);">Past Events</a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link text-white rounded" href="./contact.html" style="background: linear-gradient(60deg, rgb(67, 66, 66) 0%,rgb(30, 30, 30) 40%,rgb(0, 0, 0) 100%);">Contact</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-white rounded" href="./details.html" style="background: linear-gradient(60deg, rgb(67, 66, 66) 0%,rgb(30, 30, 30) 40%,rgb(0, 0, 0) 100%);">Details</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-white rounded" href="./stats.html" style="background: linear-gradient(60deg, rgb(67, 66, 66) 0%,rgb(30, 30, 30) 40%,rgb(0, 0, 0) 100%);">Stats</a>
+                    </li>
+                </ul>
+
+            </nav>
+        
+        </header>
+
+        <main>
+
+            <div class="banner p-5 d-flex justify-content-between bg-black" style="background: linear-gradient(180deg, rgb(0, 0, 0) 0%, 80%, rgb(62, 62, 62) 100%);" >
+                <a href="./upcoming.html">
+                    <button class="anterior bg-transparent border-0" style="font-size: 3em; color: #fff;"><i class="bi bi-chevron-left"></i></button>
+                </a>
+
+                <h1 class="subtitulo text-white" style="font-size: 3.5em;">Past Events</h1>
+
+                <a href="./contact.html">
+                    <button class="posterior bg-transparent border-0" style="font-size: 3em;color: #fff;"><i class="bi bi-chevron-right"></i></button>
+                </a>
+            </div>
+
+        
+            <section style="background-color: rgb(217, 207, 207);">
+                <form action="" class="d-flex p-2 justify-content-between flex-wrap">
+                    <fieldset class="d-flex justify-content-between m-1" style="padding-left: 5vw;">
+
+                        <input type="checkbox" name="category" id="category" value="category" style="padding-right: 50px;">
+                        <label for="category" class="p-2" style="margin-right: 2em;">Category</label>
+
+                        <input type="checkbox" name="category" id="category" value="category">
+                        <label for="category" class="p-2" style="margin-right: 2em;">Category</label>
+
+                        <input type="checkbox" name="category" id="category" value="category">
+                        <label for="category" class="p-2" style="margin-right: 2em;">Category</label>
+
+                        <input type="checkbox" name="category" id="category" value="category">
+                        <label for="category" class="p-2" style="margin-right: 2em;">Category</label>
+
+                        <input type="checkbox" name="category" id="category" value="category">
+                        <label for="category" class="p-2" style="margin-right: 2em;">Category</label>
+                        
+                    </fieldset>
+                    <fieldset class="d-flex justify-content-end" style="padding-right: 5vw;">
+                        <input type="text" name="search" id="search" value="" placeholder="Search here..." class="rounded p-2" style="width: 20vw;">
+                        <button type="submit" class="btn btn-primary rounded" style="margin-left: 7px; background: linear-gradient(180deg, rgb(28, 53, 154) 0%, 70%, rgb(43, 93, 229) 100%);color: #cfcfcf;box-shadow:0px 10px 70px 0px rgb(61, 61, 61);">
+                            <i class="bi bi-search text-white"></i>
+                        </button>
+                        
+                    </fieldset>
+                </form>
+            </section>
+        
+
+        
+            <section class="d-flex justify-content-around m-5 pb-5 flex-wrap">
+                <div class="card d-flex justify-content-center shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="image-card m-3">
+                        <img src="../assets/Cinema.jpg" alt="Cinema card" class="rounded-3">
+                    </div>
+                    <div class="detail-card text-center m-3">
+                        <h3>Título</h3>
+                        <p>Texto descriptivo</p>
+                    </div>
+                    <div class="price-card d-flex justify-content-between m-4">
+                        <h4>Price $0000</h4>
+                        <button class="rounded text-white border-0 " style="background: linear-gradient(180deg, rgb(51, 77, 178) 0%, 70%, rgb(84, 124, 233) 100%);">ver más...</button>
+                    </div>
+                </div>
+            
+                <div class="card d-flex justify-content-center shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="image-card m-3">
+                        <img src="../assets/Cinema.jpg" alt="Cinema card" class="rounded-3">
+                    </div>
+                    <div class="detail-card text-center m-3">
+                        <h3>Título</h3>
+                        <p>Texto descriptivo</p>
+                    </div>
+                    <div class="price-card d-flex justify-content-between m-4">
+                        <h4>Price $0000</h4>
+                        <button class="rounded text-white border-0 " style="background: linear-gradient(180deg, rgb(51, 77, 178) 0%, 70%, rgb(84, 124, 233) 100%);">ver más...</button>
+                    </div>
+                </div>
+
+                <div class="card d-flex justify-content-center shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="image-card m-3">
+                        <img src="../assets/Cinema.jpg" alt="Cinema card" class="rounded-3">
+                    </div>
+                    <div class="detail-card text-center m-3">
+                        <h3>Título</h3>
+                        <p>Texto descriptivo</p>
+                    </div>
+                    <div class="price-card d-flex justify-content-between m-4">
+                        <h4>Price $0000</h4>
+                        <button class="rounded text-white border-0 " style="background: linear-gradient(180deg, rgb(51, 77, 178) 0%, 70%, rgb(84, 124, 233) 100%);">ver más...</button>
+                    </div>
+                </div>
+
+                <div class="card d-flex justify-content-center shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="image-card m-3">
+                        <img src="../assets/Cinema.jpg" alt="Cinema card" class="rounded-3">
+                    </div>
+                    <div class="detail-card text-center m-3">
+                        <h3>Título</h3>
+                        <p>Texto descriptivo</p>
+                    </div>
+                    <div class="price-card d-flex justify-content-between m-4">
+                        <h4>Price $0000</h4>
+                        <button class="rounded text-white border-0 " style="background: linear-gradient(180deg, rgb(51, 77, 178) 0%, 70%, rgb(84, 124, 233) 100%);">ver más...</button>
+                    </div>
+                </div>
+
+            </section>
+            <br><br><br>
+        </main>
+
+        <footer class="bg-primary p-5 d-flex justify-content-between">
+
+            <div class="socials p-3 bg-white rounded-pill" style="font-size: 2em;">
+                <button class="bg-transparent border-0"><i class="bi bi-instagram"></i></button>
+                <button class="bg-transparent border-0"><i class="bi bi-facebook"></i></button>
+                <button class="bg-transparent border-0"><i class="bi bi-whatsapp"></i></button>
+            </div>
+
+            <h6 class="p-3 text-white" style="font-size: 1.8em;">FE04-TN</h6>
+
+        </footer>
+    </body>
+</html>
