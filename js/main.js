@@ -11,7 +11,7 @@ for(let event of data.events){
                     </div>
                     <div class="price-card d-flex justify-content-between m-4">
                         <h4>$ ${event.price}</h4>
-                        <a href="./pages/details.html" class="vermas-button rounded text-white border-0 p-2">ver más...
+                        <a href="../pages/details.html" class="vermas-button rounded text-white border-0 p-2">ver más...
                         </a>
                     </div>
                 </div>`;
