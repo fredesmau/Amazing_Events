@@ -58,6 +58,10 @@ nav{
     width: 48px;
     height: 48px;
 }
+.section-cards{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
 .image-card{
     display: flex;
     align-self: center;
@@ -65,7 +69,8 @@ nav{
     object-fit: cover;
 }
 .image-card-2{
-    width: 30vw;
+    
+    height: 30vh;
 }
 .vermas-button{
     background: linear-gradient(180deg, rgb(51, 77, 178) 0%, 70%, rgb(84, 124, 233) 100%);
