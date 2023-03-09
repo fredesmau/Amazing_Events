@@ -29,7 +29,7 @@ let returnValueCheckBox = (array)=>{
 
     if(cardsCheckBoxFilter.length > 0){
         return cardsFinal
-    } 
+    }
 }
 
 let returnValueSearch = () => {
@@ -62,7 +62,7 @@ let renderCardsSearch = (array)=>{
 
     if(array.length > 0){
         // template.forEach(card =>  setTimeout(()=> {console.log(card)}, 2000))
-        return template
+        return template.join('');
     }else{
         return `<h2 class="fs-3">There's no matches</h2>`;
     }
@@ -80,6 +80,12 @@ let renderBoth = ()=>{
     render(renderCardsSearch(checkbox), "cardEvents")
     
 }
+
+const form = document.getElementById('search-form');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+});
 
 renderCheckBox(checkFilter, checkBoxContainer)
 searchContainer.addEventListener('input', renderBoth)
