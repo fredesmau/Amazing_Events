@@ -33,7 +33,7 @@ let returnValueCheckBox = (array)=>{
 }
 
 let returnValueSearch = () => {
-    let cardsFilter = arrayEvents.filter(event => event.name.toLowerCase().includes(searchContainer.value.toLowerCase()))
+    let cardsFilter = arrayEvents.filter(event => event.name.toLowerCase().includes(searchContainer.value.toLowerCase()) || event.description.toLowerCase().includes(searchContainer.value.toLowerCase() ))
 
     if(document.querySelectorAll('input[type="checkbox"]:checked').length == 0){
        render(renderCardsSearch(cardsFilter), "cardEvents")
@@ -46,7 +46,7 @@ let renderCardsSearch = (array)=>{
     let template = []
 
     array.forEach(card => {
-        template.push(`<div class="card m-4" style="width: 23rem;">
+        template.push(`<div class="card m-4" style="width: 20rem;">
             <img src="${card.image}" class="card-img-top h-img" alt="Image card of ${card.name}" title="${card.name}"></img>
             <div class="card-body detail-card flex flex-wrap text-center">
                 <h3 class="card-title text-center">${card.name}</h3>

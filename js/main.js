@@ -8,7 +8,7 @@ let callEvents = (data)=>{
     
     for (let event of data.events){
             cardEvents.innerHTML += `
-            <div class="card m-4" style="width: 23rem;">
+            <div class="card m-4" style="width: 20rem;">
                 <img src="${event.image}" class="card-img-top h-img" alt="Image card of ${event.name}" title="${event.name}">
                 <div class="card-body detail-card flex flex-wrap text-center">
                     <h3 class="card-title text-center">${event.name}</h3>

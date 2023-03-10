@@ -6,14 +6,14 @@ let renderCards = (data, where)=>{
     where.innerHTML = ''
     for (let event of data){
         where.innerHTML += `
-        <div class="card m-4 cardTransition2" style="width: 20rem;">
+        <div class="card m-4 " style="width: 20rem;">
             <img src="${event.image}" class="card-img-top h-img" alt="${event.name}" title="${event.name}">
             <div class="card-body">
                 <h5 class="card-title text-center">${event.name}</h5>
                 <p class="card-text text-center">${event.description}</p>
-                <div class="d-flex justify-content-between price_btn_bottom">
-                    <p class="fs-5 txt_color_logo">Price: ${event.price}</p>
-                    <a href="./detail.html?id=${event._id}" class="btn btn-primary">See more..</a>
+                <div class="d-flex justify-content-between">
+                    <h4>$ ${event.price}</h4>
+                    <a href="./details.html?id=${event._id}" class="vermas-button rounded text-white border-0 p-2">Ver más..</a>
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@ let returnValueCheckBox = (array)=>{
 }
 
 let returnValueSearch = () => {
-    let cardsFilter = cardPastFiltradas.filter(event => event.name.toLowerCase().includes(searchContainer.value.toLowerCase()))
+    let cardsFilter = cardPastFiltradas.filter(event => event.name.toLowerCase().includes(searchContainer.value.toLowerCase()) || event.description.toLowerCase().includes(searchContainer.value.toLowerCase() ))
 
     if(document.querySelectorAll('input[type="checkbox"]:checked').length == 0){
        render(renderCardsSearch(cardsFilter), "cardEvents")
