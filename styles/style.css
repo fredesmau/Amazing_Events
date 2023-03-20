@@ -135,19 +135,42 @@ footer{
 /* Details page styles */
 
 .details-img-container{
-    display: flex;
-    align-self: center;
     background-size: cover;
+    width: 50rem;
+    height: 25rem;
+    background-color: rgba(255, 255, 255, 0.816);
+    padding: 1rem;
 
 }
 .details-img{
-    height: 30rem;
+    width: 55%;
+    height: 100%;
     object-fit: cover;
+    margin-right: 2rem;
+    box-shadow: 4px 4px 10px -2px #242323;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.card-title-details{
+    background-color: #242323;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .5rem;
 }
 .price-card{
     background-color: rgb(19, 8, 121);
-    border-radius: 0rem 0rem 1rem 1rem;
+    width: 100%;
+    padding: .3rem;
+    border-radius: .5rem;
+    align-self: baseline;
     color: white;
+    align-items: center;
+    
+    
 }
 
 
