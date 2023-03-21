@@ -15,7 +15,7 @@ header{
     padding-right: 4vw;
 }
 main{
-    background-color: rgb(200, 216, 216);
+    background-color: rgb(217, 207, 207);
 }
 
 nav{
@@ -41,6 +41,7 @@ nav{
 .section-search{
     background-color: rgb(217, 207, 207);
     padding-left: 4vw;
+    border-bottom: 1.5px solid rgb(202, 193, 193);
 }
 .label-category{
     margin-right: 3em;

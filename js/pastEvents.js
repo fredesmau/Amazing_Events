@@ -1,5 +1,5 @@
 async function getData () {
-    fetch("https://mindhub-xj03.onrender.com/api/amazing")
+    await fetch("https://mindhub-xj03.onrender.com/api/amazing")
     .then(response => response.json())
     .then((response)=>{
 
@@ -126,4 +126,4 @@ async function getData () {
         checkBoxContainer.addEventListener('change', renderBoth)
     })
 }
-let dataServer = getData( )
+getData()

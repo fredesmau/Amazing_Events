@@ -1,5 +1,5 @@
 async function getData () {
-    fetch("https://mindhub-xj03.onrender.com/api/amazing")
+    await fetch("https://mindhub-xj03.onrender.com/api/amazing")
     .then(response => response.json())
     .then((response)=>{
 
@@ -16,7 +16,7 @@ async function getData () {
                         <div class="card-body">
                             <h5 class="card-title text-center">${event.name}</h5>
                             <p class="card-text text-center">${event.description}</p>
-                            <div class="d-flex justify-content-between price_btn_bottom">
+                            <div class="d-flex justify-content-between">
                                 <h4>$ ${event.price}</h4>
                                 <a href="./details.html?id=${event._id}" class="vermas-button rounded text-white border-0 p-2">Ver más..</a>
                             </div>
@@ -54,7 +54,7 @@ async function getData () {
             
             let cardsCheckBoxFilter = []
 
-            checkbox.forEach(check=> cardsCheckBoxFilter.push(array.filter(event => event.category === check.value)))
+            checkbox.forEach(check=> cardsCheckBoxFilter.push(array.filter(event => event.category === check.value && event.date > response.currentDate)))
         
             let cardsFinal = cardsCheckBoxFilter.flat()
 
@@ -65,6 +65,8 @@ async function getData () {
 
         let returnValueSearch = () => {
             let cardsFilter = cardUpcomingFiltradas.filter(event => event.name.toLowerCase().includes(searchContainer.value.toLowerCase()) || event.description.toLowerCase().includes(searchContainer.value.toLowerCase() ))
+
+            cardsFilter = cardsFilter.filter(event => event.date > response.currentDate)
 
             if(document.querySelectorAll('input[type="checkbox"]:checked').length == 0){
             render(renderCardsSearch(cardsFilter), "cardEvents")
@@ -126,4 +128,4 @@ async function getData () {
     })
     
 }
-let dataServer = getData()
+getData()
