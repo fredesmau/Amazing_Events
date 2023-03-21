@@ -21,8 +21,16 @@ main{
 nav{
     color: #fff;
 }
+
 .nav-link{
-    background: linear-gradient(60deg, rgb(67, 66, 66) 0%,rgb(30, 30, 30) 40%,rgb(0, 0, 0) 100%);
+    background-color: rgba(0, 29, 132, 0.539);
+}
+
+.nav-link:hover{
+    
+    background-color: rgb(37, 149, 33);
+    transition: background-color .4s ease;
+
 }
 
 .banner{
@@ -71,13 +79,19 @@ nav{
     object-fit: cover;
 }
 .vermas-button{
-    background: linear-gradient(180deg, rgb(51, 77, 178) 0%, 70%, rgb(84, 124, 233) 100%);
+    background-color: rgb(51, 77, 178);
     text-decoration: none; 
     text-align: center; 
     justify-content: center; 
     display: flex;
     /* height:3.3vh;
     width: 5vw; */
+}
+.vermas-button:hover{
+    
+    background-color: rgb(37, 149, 33);
+    transition: background-color .3s ease;
+
 }
 footer{
     background: linear-gradient(0deg, rgb(13, 41, 151) 0%, 70%, rgb(28, 79, 221) 100%);

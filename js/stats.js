@@ -12,7 +12,7 @@ async function getData () {
             tableContainer.innerHTML = `
                 <table class="table table-hover table-striped-columns m-3">
                     <tr>
-                        <th colspan="3" class="stats-title rounded-2 text-white">Events Statistics</th>
+                        <th colspan="3" class="stats-title rounded-2 text-white fs-4">Events Statistics</th>
                     </tr>
                 
                     <tbody>
@@ -28,7 +28,7 @@ async function getData () {
                         
 
                         <tr>
-                            <th colspan="3" class="stats-title rounded-2 text-white">Upcoming events statistics by category</th>
+                            <th colspan="3" class="stats-title rounded-2 text-white fs-4">Upcoming events statistics by category</th>
                         </tr>
                         <tr>
                             <td><b>Categories</b></td>
@@ -39,7 +39,7 @@ async function getData () {
                         
 
                         <tr>
-                            <th colspan="3" class="stats-title rounded-2 text-white">Past events statistics by category</th>
+                            <th colspan="3" class="stats-title rounded-2 text-white fs-4">Past events statistics by category</th>
                         </tr>
                         <tr>
                             <td><b>Categories</b></td>
