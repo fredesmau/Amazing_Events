@@ -59,27 +59,15 @@
 
         
             <div class="section-search">
-                <form class="container-category d-flex p-2 justify-content-between flex-wrap">
-                    <fieldset class="container-fieldset d-flex justify-content-between m-1 flex-wrap">
+                <form class="container-category d-flex p-2 justify-content-between flex-wrap" id="search-form">
+                    <div class=" d-flex justify-content-between m-1 flex-wrap" id="checkbox">
 
-                        <input type="checkbox" name="category" id="category-1" value="category">
-                        <label for="category-1" class="label-category p-2">Category</label>
-
-                        <input type="checkbox" name="category" id="category-2" value="category">
-                        <label for="category-2" class="label-category p-2">Category</label>
-
-                        <input type="checkbox" name="category" id="category-3" value="category">
-                        <label for="category-3" class="label-category p-2">Category</label>
-
-                        <input type="checkbox" name="category" id="category-4" value="category">
-                        <label for="category-4" class="label-category p-2">Category</label>
-
-                        <input type="checkbox" name="category" id="category-5" value="category">
-                        <label for="category-5" class="label-category p-2">Category</label>
+                        <!-- <input type="checkbox" name="category" id="category-1" value="category">
+                        <label for="category-1" class="label-category p-2">Category</label> -->
                         
-                    </fieldset>
+                    </div>
                     <fieldset class="search-container">
-                        <input type="text" name="search" id="search" value="" placeholder="Search here..." class="search rounded p-2 border-info">
+                        <input type="text" id="search" placeholder="Search here..." class="search rounded p-2 border-info">
                         <button type="submit" class=" search-button btn-primary rounded border-0">
                             <i class="bi bi-search text-white"></i>
                         </button>
@@ -90,7 +78,7 @@
         
 
         
-            <section class="section-cards d-flex justify-content-around m-5 pb-5 flex-wrap">
+            <section class="section-cards d-flex justify-content-around m-5 pb-5 flex-wrap" id="cardEvents">
                 
                 <!-- <div class="card d-flex justify-content-center shadow p-3 mb-5 bg-body-tertiary rounded">
                     <div class="image-card m-3">
@@ -126,5 +114,7 @@
 
         <script src="../js/data.js"></script>
         <script src="../js/pastEvents.js"></script>
+        <script src="../js/details.js"></script>
+
         </body>
 </html>

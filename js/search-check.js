@@ -1,39 +1,8 @@
-const whereUpcoming = document.querySelector('section.section-cards')
+const checkBoxContainer = document.getElementById('checkbox')
+const searchContainer = document.getElementById('search')
+const arrayEvents = data.events
 
-
-let cardUpcomingFiltradas = data.events.filter(card => card.date > data.currentDate)
-
-let renderCards = (data, where)=>{
-    where.innerHTML = ''
-    for (let event of data){
-        where.innerHTML += `
-        <div class="card m-4 cardTransition2" style="width: 20rem;">
-            <img src="${event.image}" class="card-img-top h-img" alt="${event.name}" title="${event.name}">
-            <div class="card-body">
-                <h5 class="card-title text-center">${event.name}</h5>
-                <p class="card-text text-center">${event.description}</p>
-                <div class="d-flex justify-content-between price_btn_bottom">
-                    <h4>$ ${event.price}</h4>
-                    <a href="./details.html?id=${event._id}" class="vermas-button rounded text-white border-0 p-2">Ver más..</a>
-                </div>
-            </div>
-        </div>
-        `     
-    }
-}
-
-renderCards(cardUpcomingFiltradas,whereUpcoming)
-
-
-
-
-
-const checkBoxContainer = document.getElementById('checkbox');
-const searchContainer = document.getElementById('search');
-const arrayEvents = data.events;
-
-
-const checkFilter = cardUpcomingFiltradas.map(event => event.category).filter((category, index, array) => array.indexOf(category) === index)
+const checkFilter = arrayEvents.map(event => event.category).filter((category, index, array) => array.indexOf(category) === index)
 
 //Renderizo cada checkbox
 let renderCheckBox = (array, where)=>{
@@ -64,7 +33,7 @@ let returnValueCheckBox = (array)=>{
 }
 
 let returnValueSearch = () => {
-    let cardsFilter = cardUpcomingFiltradas.filter(event => event.name.toLowerCase().includes(searchContainer.value.toLowerCase()) || event.description.toLowerCase().includes(searchContainer.value.toLowerCase() ))
+    let cardsFilter = arrayEvents.filter(event => event.name.toLowerCase().includes(searchContainer.value.toLowerCase()) || event.description.toLowerCase().includes(searchContainer.value.toLowerCase() ))
 
     if(document.querySelectorAll('input[type="checkbox"]:checked').length == 0){
        render(renderCardsSearch(cardsFilter), "cardEvents")
@@ -77,7 +46,7 @@ let renderCardsSearch = (array)=>{
     let template = []
 
     array.forEach(card => {
-        template.push(`<div class="card m-4" style="width: 23rem;">
+        template.push(`<div class="card m-4" style="width: 20rem;">
             <img src="${card.image}" class="card-img-top h-img" alt="Image card of ${card.name}" title="${card.name}"></img>
             <div class="card-body detail-card flex flex-wrap text-center">
                 <h3 class="card-title text-center">${card.name}</h3>

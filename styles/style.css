@@ -14,6 +14,9 @@ header{
     padding-left: 4vw; 
     padding-right: 4vw;
 }
+main{
+    background-color: rgb(200, 216, 216);
+}
 
 nav{
     color: #fff;
@@ -59,18 +62,12 @@ nav{
     height: 48px;
 }
 .section-cards{
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
-.image-card{
-    display: flex;
-    align-self: center;
-    background-size: cover;
+.h-img{
+    height: 13rem;
     object-fit: cover;
-}
-.image-card-2{
-    
-    height: 30vh;
 }
 .vermas-button{
     background: linear-gradient(180deg, rgb(51, 77, 178) 0%, 70%, rgb(84, 124, 233) 100%);
@@ -136,18 +133,21 @@ footer{
 }
 
 /* Details page styles */
-.details-card{
-    width:65vw;
-}
+
 .details-img-container{
-    width: 500px;
     display: flex;
     align-self: center;
     background-size: cover;
 
 }
 .details-img{
-    width: 40vw;
+    height: 30rem;
+    object-fit: cover;
+}
+.price-card{
+    background-color: rgb(19, 8, 121);
+    border-radius: 0rem 0rem 1rem 1rem;
+    color: white;
 }
 
 
