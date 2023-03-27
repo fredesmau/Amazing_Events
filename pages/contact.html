@@ -11,17 +11,17 @@
     </head>
     
     <body>
-        <header class="d-flex p-2 sticky-top justify-content-between flex-wrap">
+        <header class="d-flex sticky-top justify-content-between flex-wrap">
             
-            <div class="p-3 d-flex">
+            <div class="logo-container p-3 d-flex">
                 <a class="navbar-brand" href="#">
                   <img src="../assets/LogoAmazingEvents.png" alt="Logo Amazing Events" width="250">
                 </a>
             </div>
 
-            <nav class=" d-flex align-items-center">
+            <nav class="d-flex align-items-center">
 
-                <ul class="nav p-3">
+                <ul class="nav-bar nav p-3">
                     <li class="nav-item p-2">
                       <a class="nav-link text-white rounded" aria-current="page" href="../index.html">Home</a>
                     </li>
@@ -43,7 +43,7 @@
         
         </header>
 
-        <main class="justify-content-center">
+        <main>
 
             <div class="banner p-5 d-flex justify-content-between bg-black">
                 <a href="./past.html" class="anterior bg-transparent border-0">
@@ -57,27 +57,27 @@
                 </a>
             </div>
 
-            <div class="d-flex justify-content-center ">
-                <div class="m-5 p-3 rounded-4 shadow-lg" style="background-color: rgb(217, 207, 207); align-items: center;">
+            <div class="contact-card d-flex justify-content-center">
+                <div class="contact-card-container m-5 p-3 rounded-4 shadow-lg">
                     <form class="p-3 m-3 d-flex justify-content-center">
-                        <fieldset class="p- " style="font-size: 1.2em;">
-                            <div style="padding-bottom: 2em;">
+                        <fieldset class="contact-card-2 p-1">
+                            <div class="contact-label-container">
                             <label for="name-1" class="d-flex justify-content-start" id="name"><b>Name</b> </label >
-                                <input type="text" name="name" id="name-1" style="width: 25vw; height: 5vh; border: transparent; border-bottom: 3px solid rgba(84, 124, 233, 0.801); background-color: rgb(217, 207, 207); box-shadow: 1px 6px 1px -2px rgb(173, 168, 168);"> 
+                                <input type="text" name="name" id="name-1" class="contact-input"> 
                             </div>
                             
-                            <div style="padding-bottom: 2em;">
+                            <div class="contact-label-container">
                                 <label for="email-1" class="d-flex justify-content-start" id="email"><b>Email</b></label>
-                                <input type="text" name="email" id="email-1" style="width: 25vw; height: 5vh; border: transparent; border-bottom: 3px solid rgba(84, 124, 233, 0.801); background-color: rgb(217, 207, 207); box-shadow: 1px 6px 1px -2px rgb(173, 168, 168);">
+                                <input type="text" name="email" id="email-1" class="contact-input">
                             </div>
                             
-                            <div style="padding-bottom: 2em;">
+                            <div class="contact-label-container">
                                 <label for="message-1" class="d-flex justify-content-start" id="message" > <b>Message</b></label>
-                                <textarea name="message" id="message-1" cols="45" rows="4" style="width: 25vw;  border: transparent; border-bottom: 3px solid rgba(84, 124, 233, 0.801); background-color: rgb(217, 207, 207); box-shadow: 1px 6px 1px -2px rgb(173, 168, 168);"></textarea>
+                                <textarea name="message" id="message-1" cols="45" rows="4" class="contact-message-input"></textarea>
                             </div>
 
-                            <div class="text-center d-flex justify-content-start" style="margin-top: 20px;">
-                                <input type="submit" value="Submit" class="d-flex justify-content-center rounded-3 border-0 text-white" style="width: 25vw; height: 5vh; text-align: center; background: linear-gradient(180deg, rgb(51, 77, 178) 0%, 70%, rgb(84, 124, 233) 100%); box-shadow: 0 8px 40px 4px rgb(131, 128, 128);">
+                            <div class="submit-button-contact d-flex">
+                                <input type="submit" value="Submit" class="contact-submit-button d-flex justify-content-center rounded-3 border-0 text-white">
                             </div>
 
                         </fieldset>
@@ -92,15 +92,15 @@
 
         </main>
 
-        <footer class="p-5 d-flex justify-content-between" style="background: linear-gradient(0deg, rgb(13, 41, 151) 0%, 70%, rgb(28, 79, 221) 100%);">
+        <footer class="p-5 d-flex justify-content-between">
 
-            <div class="socials p-3 bg-white rounded-pill" style="font-size: 2em;">
+            <div class="socials p-3 bg-white rounded-pill">
                 <button class="bg-transparent border-0"><i class="bi bi-instagram"></i></button>
                 <button class="bg-transparent border-0"><i class="bi bi-facebook"></i></button>
                 <button class="bg-transparent border-0"><i class="bi bi-whatsapp"></i></button>
             </div>
 
-            <h6 class="p-3 text-white" style="font-size: 1.8em;">FE04-TN</h6>
+            <h6 class="cohort p-3 text-white">FE04-TN</h6>
 
         </footer>
     </body>

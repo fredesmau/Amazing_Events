@@ -1,3 +1,5 @@
+/* Global styles */
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +10,9 @@ header{
     background: linear-gradient(180deg, rgb(13, 41, 151) 0%, 70%, rgb(28, 79, 221) 100%);
     color: #fff;
     box-shadow:0px 10px 70px 0px rgb(61, 61, 61);
+    padding:1vh; 
+    padding-left: 4vw; 
+    padding-right: 4vw;
 }
 
 nav{
@@ -27,42 +32,139 @@ nav{
 .subtitulo{
     font-size: 3.5em;
 }
+.container-category{
+    padding-left: 5vw;
+}
 .section-search{
     background-color: rgb(217, 207, 207);
+    padding-left: 4vw;
 }
 .label-category{
     margin-right: 3em;
 }
 .search-container{
+    padding-right: 5vw;
+    display: flex;
+    justify-content: end;
+}
+.search{
+    width: 20vw;
+    height: 48px;
+}
+.search-button{
     margin-left: 7px; background: linear-gradient(180deg, rgb(28, 53, 154) 0%, 70%, rgb(43, 93, 229) 100%);
     color: #cfcfcf;
     box-shadow:0px 10px 70px 0px rgb(61, 61, 61);
-    width: 3vw;
+    width: 48px;
+    height: 48px;
+}
+.section-cards{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.image-card{
+    display: flex;
+    align-self: center;
+    background-size: cover;
+    object-fit: cover;
+}
+.image-card-2{
+    
+    height: 30vh;
 }
 .vermas-button{
     background: linear-gradient(180deg, rgb(51, 77, 178) 0%, 70%, rgb(84, 124, 233) 100%);
-    height:3.3vh;
-    width: 5vw;
+    text-decoration: none; 
+    text-align: center; 
+    justify-content: center; 
+    display: flex;
+    /* height:3.3vh;
+    width: 5vw; */
 }
 footer{
     background: linear-gradient(0deg, rgb(13, 41, 151) 0%, 70%, rgb(28, 79, 221) 100%);
 }
+.socials{
+    font-size: 2em;
+}
+.cohort{
+    font-size: 1.8em;
+}
+
+/* Contact page styles */
+.contact-card-container{
+    background-color: rgb(217, 207, 207); 
+    align-items: center;
+}
+.contact-card-2{
+    font-size: 1.2em;
+}
+.contact-label-container{
+    padding-bottom: 2em;
+}
+.contact-input{
+    width: 25vw; 
+    height: 5vh; 
+    border: transparent; 
+    border-bottom: 3px solid rgba(84, 124, 233, 0.801); 
+    background-color: transparent;
+    box-shadow: 1px 6px 1px -2px rgb(173, 168, 168);
+}
+.contact-message-input{
+    width: 25vw;  
+    border: transparent; 
+    border-bottom: 3px solid rgba(84, 124, 233, 0.801); 
+    background-color: transparent;
+    box-shadow: 1px 6px 1px -2px rgb(173, 168, 168);
+}
+.contact-submit-button{
+    margin-top: 20px;
+    width: 25vw; 
+    height: 5vh; 
+    text-align: center; 
+    background: linear-gradient(180deg, rgb(51, 77, 178) 0%, 70%, rgb(84, 124, 233) 100%);
+    box-shadow: 0 8px 40px 4px rgb(131, 128, 128);
+}
+
+/* Stats page styles */
+
+.stats-table-container{
+    width: 70vw;
+}
+.stats-title{
+    background: linear-gradient(180deg, rgb(51, 77, 178) 0%, 70%, rgb(84, 124, 233) 100%);
+}
+
+/* Details page styles */
+.details-card{
+    width:65vw;
+}
+.details-img-container{
+    width: 500px;
+    display: flex;
+    align-self: center;
+    background-size: cover;
+
+}
+.details-img{
+    width: 40vw;
+}
 
 
-/* Todos los estilos los puse en el html */
-/* Todos los estilos los puse en el html */
-/* Todos los estilos los puse en el html */
+
+
 
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 768px) { 
     header{
-
         display: flex;
-        justify-content: center;
+        justify-content: end;
+        flex-direction: column;
+
 
     }
-    .logo-img{
+    .logo-container{
         display: inline-block;
         justify-content: center;
     }
@@ -70,20 +172,81 @@ footer{
         display: inline-block;
         justify-content: center;
     }
-    .navbar-brand{
-        display: flex;
-        justify-content: between;
+    nav-bar{
+        display: inline-block;
     }
     .nav-link{
-        color: aqua;
-        
+        font-size: 1.2em;
     }
-
     .subtitulo{
         font-size: 50px;
     }
     .container-category{
         flex-wrap: wrap;
         padding-left: 1vw;
+    }
+    .details-card{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .details-img-container{
+        justify-content: center;
+        align-content: center;
+    }
+    .details-img{
+        width: 60vw;
+    }
+    .image-card-2{
+        width: 50vw;
+    }
+    .section-search{
+        background-color: rgb(217, 207, 207);
+    }
+    .container-category{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .label-category{
+        margin-right: 0.5em;
+    }
+    .search-container{
+        display: flex;
+        justify-content: center;
+        padding-left: 4vw;
+    }
+    .search{
+        width: 80vw;
+    }
+
+    .banner{
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+    
+    .contact-card-container{
+        background-color: rgb(217, 207, 207); 
+        align-items: center;
+    }
+    .contact-card-2{
+        font-size: 1.2em;
+    }
+    .contact-input{
+        width: 60vw; 
+        height: 6vh;
+    }
+    .contact-message-input{
+        width: 60vw;
+    }
+    .submit-button-contact{
+        justify-content: center;
+        
+    }
+    .contact-submit-button{
+        width: 50vw;
+    }
+    .stats-table-container{
+        width: 80vw;
     }
 }
